@@ -1,52 +1,107 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title> My Web Site</title>
         <meta charset="UTF-8">
         <meta name="description" content="Home page for my online IDE">
         <meta name="keywords" content="HTML,CSS,JavaScript">
         <meta name="author" content="Blagescu Alex-George">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
         <base href="idePage.html" target="_blank">
     </head>
     <body>
         <header>
-            <nav class = "zone customOrange">
-                <ul class = "main-nav">
-                    <li><a href=""><h4>About</h4></a></li>
-                    <li><a href=""><h4>Products</h4></a></li>
-                    <li><a href=""><h4>Our Team</h4></a></li>
-                    <li class = "push"><a href="">Contacts</a></li>
+            <nav>
+                <div id="logo">
+                    <h1>
+                        <span class="highlight">The</span> 
+                        Nav
+                    </h1>
+                </div>
+                <ul class="nav-links">
+                    <li class="current"><a href="index.html" class="cool-link">HOME</a></li>
+                    <li><a href="index.html" class="cool-link">ABOUT</a></li>
+                    <li><a href="index.html" class="cool-link">WORK</a></li>
+                    <li><a href="index.html" class="cool-link">PROJECTS</a></li>
+
                 </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>  
             </nav>
         </header>
-        <div class = "zone">
-            <img src = "img/python.jpg" width = "100%">
 
-        </div>
-        <div class = " text grid-wrapper">
-            <img class = "cover" src="img/img1.png">
-            <p class = "text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos voluptates libero debitis quaerat earum fugiat cumque ipsam asperiores suscipit, maiores magni corporis corrupti recusandae unde in eligendi doloribus impedit nulla.
+        <section id="showcase">
+            <div class="container">
+                <h1>
+                    Affordable Professional Web Design
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate expedita beatae facilis sapiente molestias necessitatibus ipsum veniam modi ipsa saepe ipsam quas obcaecati magnam, natus provident enim, molestiae ducimus quos.
+                </p>
+            </div>
+        </section>
+
+        <section id="newsletter">
+            <div class="container">
+                <h1>
+                    Subscribe to our Newsletter
+                </h1>
+                <form>
+                    <input type="email" placeholder="Enter Email...">
+                    <input type="password" placeholder="Password...">
+                    <button type="submit" class="btn">
+                        log in
+                    </button>
+                </form>
+            </div>
+
+        </section>
+
+        <section id="boxes">
+            <div class="flex-container">
+                <div class="box">
+                    <img src="./img/logo_html.png">
+                    <h3>
+                        HTML Markup
+                    </h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab tempore assumenda labore accusamus incidunt eum, ea doloremque necessitatibus excepturi, illum consequatur nam similique. Dolor maxime ea obcaecati quidem consequuntur cumque?
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="./img/logo_css.png">
+                    <h3>
+                        CSS3 Styling
+                    </h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab tempore assumenda labore accusamus incidunt eum, ea doloremque necessitatibus excepturi, illum consequatur nam similique. Dolor maxime ea obcaecati quidem consequuntur cumque?
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="./img/logo_brush.png">
+                    <h3>
+                        Graphic Design
+                    </h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab tempore assumenda labore accusamus incidunt eum, ea doloremque necessitatibus excepturi, illum consequatur nam similique. Dolor maxime ea obcaecati quidem consequuntur cumque?
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>
+                My Web Design, Copyright &copy; 2019
             </p>
-        </div>
-        <div class = " text grid-wrapper">
-            <p class = "text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos voluptates libero debitis quaerat earum fugiat cumque ipsam asperiores suscipit, maiores magni corporis corrupti recusandae unde in eligendi doloribus impedit nulla.
-            </p>
-            <img class = "cover" src="img/img2.png">
-        </div>
-        <div class = "zone blue grid-wrapper">
-            <div class="box zone"><img src=""></div>
-            <div class="box zone"><img src=""></div>
-            <div class="box zone"><img src=""></div>
-            <div class="box zone"><img src=""></div>
-        </div>
-
-        <footer class = "zone yellow">footer</footer>
-
         </footer>
 
+        <script src="app.js"></script>
     </body>
 
 </html>
