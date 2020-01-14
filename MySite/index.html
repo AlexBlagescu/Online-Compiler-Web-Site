@@ -9,22 +9,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-        <base href="idePage.html" target="_blank">
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <nav>
                 <div id="logo">
                     <h1>
-                        <span class="highlight">The</span> 
-                        Nav
+                        <a href="#showcase">
+                            <span class="highlight">The</span> 
+                            <span id="Nav">Nav</span>
+                        </a>
                     </h1>
                 </div>
                 <ul class="nav-links">
-                    <li class="current"><a href="index.html" class="cool-link">HOME</a></li>
-                    <li><a href="index.html" class="cool-link">ABOUT</a></li>
-                    <li><a href="index.html" class="cool-link">WORK</a></li>
-                    <li><a href="index.html" class="cool-link">PROJECTS</a></li>
+                    <li><a href="#HOME" class="cool-link">HOME</a></li>
+                    <li><a href="#ABOUT" class="cool-link">ABOUT</a></li>
+                    <li><a href="#WORK" class="cool-link">WORK</a></li>
+                    <li><a href="#PROJECTS" class="cool-link">PROJECTS</a></li>
 
                 </ul>
                 <div class="burger">
@@ -37,70 +39,184 @@
 
         <section id="showcase">
             <div class="container">
-                <h1>
-                    Affordable Professional Web Design
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate expedita beatae facilis sapiente molestias necessitatibus ipsum veniam modi ipsa saepe ipsam quas obcaecati magnam, natus provident enim, molestiae ducimus quos.
-                </p>
+                <article id="main-container">
+                    <aside id="text-main-container">
+                        <h1>
+                            Affordable Professional Web Design
+                        </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate expedita beatae facilis sapiente molestias necessitatibus ipsum veniam modi ipsa saepe ipsam quas obcaecati magnam, natus provident enim, molestiae ducimus quos.
+                        </p>
+                        <h1>Customize site after your preference</h1>
+                        <div  id="customize-container">
+                            <div class="font-container">
+                                <input type="color" class="customize-font-button" value="#ffffff"> 
+                                    <span id="text-font">Font Color Change</span>
+                                </input>
+                                <br>
+                                <div id="enter-container">
+                                    <input type="text" placeholder="Enter a Fond" id="enter-box"></input>
+                                    <button class="signup-btn" id="enter">Enter</button>
+                                </div>
+                                <form id="radio-container">
+                                    <label for = "radio-b1" class="radio-font"> Poppins</label>
+                                    <input type="radio" name="box-buttons" value="Poppins" id="radio-b1"></input>
+
+                                    <label for = "radio-b2" class="radio-font"> Permanent Marker</label>
+                                    <input type="radio" name="box-buttons" value="Permanent Marker" id="radio-b2"></input>
+
+                                    <label for = "radio-b3 class="radio-font"> Arial</label>
+                                    <input type="radio" name="box-buttons" value="Arial" id="radio-b3"></input>
+                                </form>
+                                
+                            </div>  
+                        </div>
+                    </aside>
+                    <div class="signup-form">
+                        <form class="container-signup" action="index.html" method="post">
+                            <h1>Sign Up</h1>
+                            <input type="text" placeholder="Full Name" class="txtb">
+                            <input type="email" placeholder="Email" class="txtb">
+                            <input type="password" placeholder="Password" class="txtb"> 
+                            <input type="submit" value="Create Account" class="signup-btn">
+                            <a href="#"> Aleardy Have one?</a>
+                        </form>
+                    </div>
+            </article>
             </div>
         </section>
 
         <section id="newsletter">
             <div class="container">
                 <h1>
-                    Subscribe to our Newsletter
+                    LOGIN
                 </h1>
                 <form>
-                    <input type="email" placeholder="Enter Email...">
-                    <input type="password" placeholder="Password...">
+                    <input type="email" placeholder="Enter Email..." class="txtb">
+                    <input type="password" placeholder="Password..." class="txtb">
                     <button type="submit" class="btn">
-                        log in
+                        LOGIN
                     </button>
                 </form>
             </div>
 
         </section>
 
-        <section id="boxes">
-            <div class="flex-container">
-                <div class="box">
-                    <img src="./img/logo_html.png">
-                    <h3>
-                        HTML Markup
-                    </h3>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab tempore assumenda labore accusamus incidunt eum, ea doloremque necessitatibus excepturi, illum consequatur nam similique. Dolor maxime ea obcaecati quidem consequuntur cumque?
-                    </p>
-                </div>
-                <div class="box">
-                    <img src="./img/logo_css.png">
-                    <h3>
-                        CSS3 Styling
-                    </h3>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab tempore assumenda labore accusamus incidunt eum, ea doloremque necessitatibus excepturi, illum consequatur nam similique. Dolor maxime ea obcaecati quidem consequuntur cumque?
-                    </p>
-                </div>
-                <div class="box">
-                    <img src="./img/logo_brush.png">
-                    <h3>
-                        Graphic Design
-                    </h3>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab tempore assumenda labore accusamus incidunt eum, ea doloremque necessitatibus excepturi, illum consequatur nam similique. Dolor maxime ea obcaecati quidem consequuntur cumque?
-                    </p>
-                </div>
+        <div class="grid-container">
+            <div id="HOME">
+                    <div class="flex-container-odd">
+                            <img src="./img/image1.png" class="image">
+                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae unde esse excepturi delectus suscipit eum atque iste sunt quisquam laboriosam repellat asperiores incidunt, maiores architecto ratione, illo reprehenderit, soluta eveniet.</p>
+                    </div>
+            </div>
+            <div id="ABOUT">
+                    <div class="flex-container-even">
+                            <img src="./img/image2.PNG" class="image">
+                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae unde esse excepturi delectus suscipit eum atque iste sunt quisquam laboriosam repellat asperiores incidunt, maiores architecto ratione, illo reprehenderit, soluta eveniet.</p>
+
+                    </div>
             </div>
 
-        </section>
+            <div id="WORK">
+                    <div class="flex-container-odd">
+                            <img src="./img/image3.PNG" class="image">
+                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae unde esse excepturi delectus suscipit eum atque iste sunt quisquam laboriosam repellat asperiores incidunt, maiores architecto ratione, illo reprehenderit, soluta eveniet.</p>
+
+                    </div>
+            </div>
+            <div id="PROJECTS">
+                    <div class="flex-container-even">
+                            <img src="./img/image4.PNG" class="image">
+                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae unde esse excepturi delectus suscipit eum atque iste sunt quisquam laboriosam repellat asperiores incidunt, maiores architecto ratione, illo reprehenderit, soluta eveniet.</p>
+
+                    </div>
+            </div>
+    </div>
+
+
+
+
+
 
         <footer>
-            <p>
-                My Web Design, Copyright &copy; 2019
-            </p>
-        </footer>
+            <div class="footer-square">
 
+            </div>
+            <div id="flex-table">
+                <div class="footer-box">
+                    <h1>Leaderboards</h1>
+                    <table class="content-table">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Name</th>
+                                <th>Most Source Compiled</th>
+                                <th>Team</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Domenic</td>
+                                <td>88, 110</td>
+                                <td>dcode</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Sally</td>
+                                <td>72, 400</td>
+                                <td>Students</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Nick</td>
+                                <td>52, 300</td>
+                                <td>dcode</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="footer-box">
+                    <h1>
+                        What define <span class="highlight">us?</span>
+                    </h1>
+                    <div id="flex-gallery">
+                        <figure>
+                            <img src="./img/fast.jpg" class="image-gallery">
+                            <figcaption>
+                                LET US
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./img/code-computer.jpg" class="image-gallery">
+                            <figcaption>
+                                COMPILE
+                            </figcaption>
+                        </figure>
+                        <figure> 
+                            <img src="./img/safe.PNG" class="image-gallery">
+                            <figcaption>
+                                FOR YOU!
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+                <div class="footer-box auxiliar">
+                        <h1>Contact us</h1>
+                        <div class="s-m">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                        <button type="text" class="change-background signup-btn" onclick="changePhotoFunction()">Photo Permutation</button>
+                        <p id="fact">Numbers of clicks: <span id="result"></span></p>
+                        <p id="text-data-time">Date/Time: <span id="datetime"></span></p>
+                </div>
+        </footer>
+        <script src="https://kit.fontawesome.com/482b1297e4.js" crossorigin="anonymous"></script>
         <script src="app.js"></script>
     </body>
 
